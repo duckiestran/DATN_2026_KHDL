@@ -59,8 +59,9 @@ Code
 ```bash
 git clone https://github.com/duckiestran/DATN_2026_KHDL.git
 cd DATN_2026_KHDL
+```
 2️⃣ Tạo Môi Trường Ảo (Tùy Chọn)
-bash
+```bash
 # Với venv
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
@@ -69,33 +70,44 @@ venv\Scripts\activate     # Windows
 # Hoặc với conda
 conda create -n fraud-detection python=3.8
 conda activate fraud-detection
+```
 3️⃣ Cài Đặt Các Thư Viện Phụ Thuộc
-bash
+```bash
 pip install -r requirements.txt
+```
 4️⃣ Tải Dữ Liệu
 Truy cập Google Drive
 Tải 4 file CSV xuống
 Tạo thư mục data/ và đặt các file vào đó
 📁 Cấu Trúc Dự Án
-Code
+```Code
 DATN_2026_KHDL/
 ├── README.md                      # Tài liệu dự án
 ├── requirements.txt               # Danh sách thư viện Python
 ├── fraud_detection-2.ipynb        # Notebook chính
 ├── data/                          # Thư mục tập dữ liệu
 └── outputs/                       # Kết quả & biểu đồ trực quan
+```
 🚀 Hướng Dẫn Sử Dụng
-bash
+```bash
 # Sử dụng Jupyter Notebook
 jupyter notebook fraud_detection-2.ipynb
-🎯 Các Metrics Hiệu Suất
-Metrics	Mô Tả
-ROC-AUC	Diện tích dưới đường cong ROC
-Precision	Tỷ lệ dự đoán gian lận đúng
-Recall	Tỷ lệ phát hiện được gian lận
-F1-Score	Trung bình điều hòa của Precision và Recall
-📦 Các Thư Viện Cần Thiết
-Code
+```
+````markdown
+## 🎯 Các Metrics Hiệu Suất
+
+| Metrics   | Mô Tả                              |
+|-----------|-----------------------------------|
+| ROC-AUC   | Diện tích dưới đường cong ROC     |
+| Precision | Tỷ lệ dự đoán gian lận đúng       |
+| Recall    | Tỷ lệ phát hiện được gian lận     |
+| F1-Score  | Trung bình điều hòa của Precision và Recall |
+
+---
+
+## 📦 Các Thư Viện Cần Thiết
+
+```
 numpy>=1.19.0
 pandas>=1.1.0
 matplotlib>=3.3.0
@@ -103,30 +115,30 @@ seaborn>=0.11.0
 scikit-learn>=0.23.0
 lightgbm>=3.1.0
 scipy>=1.5.0
-🐛 Khắc Phục Sự Cố
-Lỗi không tìm thấy module: pip install -r requirements.txt
-Lỗi bộ nhớ: Kiểm tra RAM khả dụng trước khi chạy
-Không tìm thấy dữ liệu: Đảm bảo file CSV nằm trong thư mục data/
-📚 Tham Khảo
-LightGBM Documentation
-Scikit-learn Documentation
-IEEE Fraud Detection Kaggle
-👥 Đóng Góp
-Fork repository
-Tạo branch mới (git checkout -b feature/improvement)
-Commit các thay đổi (git commit -am 'Add new feature')
-Push lên branch (git push origin feature/improvement)
-Tạo Pull Request
-Lần Cập Nhật Cuối Cùng: 2026-03-19
-Trạng Thái: ✅ Phát Triển Tích Cực
+````
 
-Code
+---
 
-### 📌 Cách cập nhật README.md trên GitHub:
+## 🐛 Khắc Phục Sự Cố
 
-1. Truy cập vào repository: https://github.com/duckiestran/DATN_2026_KHDL
-2. Click vào file **README.md**
-3. Click biểu tượng **chỉnh sửa** (✏️ Edit)
-4. Xóa nội dung cũ và dán nội dung trên vào
-5. Scroll xuống và click **"Commit changes"**
+* Lỗi không tìm thấy module:
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+* Lỗi bộ nhớ:
+  Kiểm tra RAM khả dụng trước khi chạy
+
+* Không tìm thấy dữ liệu:
+  Đảm bảo file CSV nằm trong thư mục `data/`
+
+---
+
+## 📚 Tham Khảo
+
+* LightGBM Documentation
+* Scikit-learn Documentation
+* IEEE Fraud Detection Kaggle
+
 
