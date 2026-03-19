@@ -1,56 +1,43 @@
-# Fraud Detection Project Documentation
+# Tổng quan dự án
 
-## Project Overview
-This project aims to develop a comprehensive fraud detection system using machine learning techniques. The goal is to identify fraudulent transactions in various domains, ensuring safety and security in financial operations.
+Dự án phát hiện gian lận này được xây dựng để phát hiện các giao dịch gian lận trong hệ thống tài chính bằng cách sử dụng các thuật toán học máy. Mục tiêu của dự án là sử dụng dữ liệu từ các giao dịch và thông tin của người dùng để phát hiện các mẫu giao dịch đáng ngờ.
 
-## Dataset Information
-The dataset used for this project is sourced from Google Drive and contains various features crucial for identifying fraudulent activities. It includes:
-- **Transaction ID**: Unique identifier for each transaction
-- **Amount**: Transaction amount
-- **Timestamp**: Date and time of the transaction
-- **User ID**: Identifier for the user making the transaction
-- **Merchant ID**: Identifier for the merchant associated with the transaction
-- **Is Fraud**: Label indicating whether the transaction is fraudulent
+# Thông tin về tập dữ liệu
 
-Link to the dataset: [Google Drive Dataset](#)
+Dữ liệu được sử dụng trong dự án này bao gồm các tệp sau:
+- **train_identity.csv**: Tập dữ liệu chứa thông tin danh tính của người dùng.
+- **train_transaction.csv**: Tập dữ liệu chứa thông tin giao dịch.
+- **test_identity.csv**: Tập dữ liệu dùng để kiểm tra mô hình với thông tin danh tính.
+- **test_transaction.csv**: Tập dữ liệu dùng để kiểm tra mô hình với thông tin giao dịch.
 
-## Setup Instructions
-1. **Clone the repository**:
-   ```
-   git clone https://github.com/duckiestran/DATN_2026_KHDL.git
-   cd DATN_2026_KHDL
-   ```
-2. **Install dependencies**:
-   ```
+Các tệp này được lưu trữ trên Google Drive và có thể tải xuống để sử dụng trong dự án.
+
+# Hướng dẫn cài đặt
+
+1. Clone repository: `git clone <repository-url>`
+2. Cài đặt các thư viện yêu cầu:
+   ```bash
    pip install -r requirements.txt
    ```
-3. **Download the dataset** from Google Drive and place it in the `data` directory.
-4. **Run the application**:
-   ```
-   python main.py
-   ```
 
-## Features
-- Real-time fraud detection
-- User-friendly interface
-- Detailed transaction reports
-- Customizable threshold settings for fraud detection
+# Hướng dẫn sử dụng
 
-## Model Architecture
-The fraud detection system leverages machine learning models such as:
-- Logistic Regression
-- Decision Trees
-- Random Forests
-- Neural Networks
+Để sử dụng ứng dụng, bạn có thể chạy lệnh sau:
+```bash
+python main.py
+```
 
-These models are trained on historical transaction data and tested for accuracy.
+# Tính năng
 
-## Usage Guidelines
-- Upon running the application, users need to input transaction details to check for fraud.
-- The system will return a prediction of whether the transaction is fraudulent or not.
-- Users can adjust the model parameters as needed to improve detection rates.
+- Phát hiện giao dịch gian lận.
+- Phân tích các thông tin về người dùng và giao dịch.
+- Xuất báo cáo và kết quả phân tích.
 
-## Conclusion
-This fraud detection system is a valuable tool for organizations looking to minimize financial losses and enhance security protocols. Through continuous learning and model updates, it aims to adapt to emerging fraudulent patterns.
+# Kiến trúc mô hình
 
----
+Dự án sử dụng các thuật toán học máy như Random Forest, XGBoost để xây dựng mô hình phát hiện gian lận. Mô hình được huấn luyện trên tập dữ liệu đào tạo và sau đó được kiểm tra trên tập dữ liệu kiểm tra.
+
+# Khắc phục sự cố
+
+- **Lỗi không tìm thấy tập tin**: Đảm bảo rằng tất cả các tệp dữ liệu đã được tải xuống và nằm trong cùng thư mục với mã nguồn.
+- **Lỗi về thư viện**: Đảm bảo rằng bạn đã cài đặt tất cả các thư viện được liệt kê trong `requirements.txt`.
