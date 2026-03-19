@@ -1,8 +1,8 @@
-# 🔍 Dự Án Phát Hiện Gian Lận - DATN_2026_KHDL
+# 🔍 Đề tài Phát hiện gian lận trong giao dịch tài chính - DATN_2026_KHDL
 
 ## 📋 Tổng Quan Dự Án
 
-Dự án này phát triển một **hệ thống phát hiện gian lận (Fraud Detection System)** sử dụng các thuật toán **Machine Learning** nâng cao. Mục tiêu là xây dựng mô hình có khả năng phân loại các giao dịch điện tử thành hai loại: **gian lận** hoặc **hợp lệ**.
+Dự án này phát triển và tối ưu hóa **Mô hình phát hiện gian lận trong giao dịch tài chính** sử dụng các thuật toán **Machine Learning** nâng cao. Mục tiêu là xây dựng mô hình có khả năng phân loại các giao dịch điện tử thành hai loại: **gian lận** hoặc **hợp lệ**.
 
 ### ✨ Các Tính Năng Chính
 - ✅ Xử lý dữ liệu lớn với tối ưu hóa bộ nhớ
